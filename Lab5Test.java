@@ -93,4 +93,13 @@ public class Lab5Test {
 		testList.add(3);
 		assertEquals(testList, Primes.Generation(5));
 	}
+	
+	@Test
+	public void testGen7() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		testList.add(2);
+		testList.add(3);
+		testList.add(5);
+		assertEquals(testList, Primes.Generation(7));
+	}
 }
