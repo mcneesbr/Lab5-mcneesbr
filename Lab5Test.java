@@ -85,4 +85,12 @@ public class Lab5Test {
 		testList.add(3);
 		assertEquals(testList, Primes.Generation(4));
 	}
+	
+	@Test
+	public void testGen5() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		testList.add(2);
+		testList.add(3);
+		assertEquals(testList, Primes.Generation(5));
+	}
 }
