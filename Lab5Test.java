@@ -13,17 +13,17 @@ public class Lab5Test {
 	}
 	
 	@Test
-	public void test2() {
+	public void testFact2() {
 		assertTrue(Primes.Factorization(2).get(0) == 2);
 	}
 	
 	@Test
-	public void test3() {
+	public void testFact3() {
 		assertTrue(Primes.Factorization(3).get(0) == 3);
 	}
 	
 	@Test
-	public void test4() {
+	public void testFact4() {
 		ArrayList<Integer> testList = new ArrayList<Integer>();
 		testList.add(2);
 		testList.add(2);
@@ -31,7 +31,7 @@ public class Lab5Test {
 	}
 	
 	@Test
-	public void test6() {
+	public void testFact6() {
 		ArrayList<Integer> testList = new ArrayList<Integer>();
 		testList.add(2);
 		testList.add(3);
@@ -39,7 +39,7 @@ public class Lab5Test {
 	}
 	
 	@Test
-	public void test8() {
+	public void testFact8() {
 		ArrayList<Integer> testList = new ArrayList<Integer>();
 		testList.add(2);
 		testList.add(2);
@@ -48,7 +48,7 @@ public class Lab5Test {
 	}
 	
 	@Test
-	public void test9() {
+	public void testFact9() {
 		ArrayList<Integer> testList = new ArrayList<Integer>();
 		testList.add(3);
 		testList.add(3);
@@ -56,12 +56,18 @@ public class Lab5Test {
 	}
 	
 	@Test
-	public void test325115() {
+	public void testFact325115() {
 		ArrayList<Integer> testList = new ArrayList<Integer>();
 		testList.add(5);
 		testList.add(7);
 		testList.add(7);
 		testList.add(1327);
 		assertEquals(testList, Primes.Factorization(325115));
+	}
+	
+	@Test
+	public void testGen2() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		assertEquals(testList, Primes.Generation(2));
 	}
 }

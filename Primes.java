@@ -25,6 +25,16 @@ public class Primes {
 		return factList;
 	}
 	
+	public static ArrayList<Integer> Generation(int n) {
+		ArrayList<Integer> primeList = new ArrayList<Integer>();
+		for (int i = 2; i < n; i++) {
+			if (IsPrime(i)) {
+				primeList.add(i);
+			}
+		}
+		return primeList;
+	}
+	
 	public static boolean IsPrime(int n) {
 		if (n < 2) {
 			return false;
