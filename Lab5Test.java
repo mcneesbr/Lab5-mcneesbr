@@ -29,4 +29,12 @@ public class Lab5Test {
 		testList.add(2);
 		assertEquals(testList, Primes.Factorization(4));
 	}
+	
+	@Test
+	public void test6() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		testList.add(2);
+		testList.add(3);
+		assertEquals(testList, Primes.Factorization(6));
+	}
 }
