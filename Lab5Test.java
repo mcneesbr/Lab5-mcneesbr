@@ -10,4 +10,9 @@ public class Lab5Test {
 		assertTrue(Primes.Factorization(1).isEmpty());
 	}
 	
+	@Test
+	public void test2() {
+		assertTrue(Primes.Factorization(2).get(0) == 2);
+	}
+	
 }
