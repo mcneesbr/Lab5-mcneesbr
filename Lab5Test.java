@@ -54,4 +54,14 @@ public class Lab5Test {
 		testList.add(3);
 		assertEquals(testList, Primes.Factorization(9));
 	}
+	
+	@Test
+	public void test325115() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		testList.add(5);
+		testList.add(7);
+		testList.add(7);
+		testList.add(1327);
+		assertEquals(testList, Primes.Factorization(325115));
+	}
 }
