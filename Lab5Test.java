@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class Lab5Test {
 	
 	@Test
-	public void test1() {
+	public void testFact1() {
 		assertTrue(Primes.Factorization(1).isEmpty());
 	}
 	
@@ -69,5 +69,12 @@ public class Lab5Test {
 	public void testGen2() {
 		ArrayList<Integer> testList = new ArrayList<Integer>();
 		assertEquals(testList, Primes.Generation(2));
+	}
+	
+	@Test
+	public void testGen3() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		testList.add(2);
+		assertEquals(testList, Primes.Generation(3));
 	}
 }
