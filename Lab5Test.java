@@ -102,4 +102,35 @@ public class Lab5Test {
 		testList.add(5);
 		assertEquals(testList, Primes.Generation(7));
 	}
+	
+	@Test
+	public void testGen100() {
+		ArrayList<Integer> testList = new ArrayList<Integer>();
+		testList.add(2);
+		testList.add(3);
+		testList.add(5);
+		testList.add(7);
+		testList.add(11);
+		testList.add(13);
+		testList.add(17);
+		testList.add(19);
+		testList.add(23);
+		testList.add(29);
+		testList.add(31);
+		testList.add(37);
+		testList.add(41);
+		testList.add(43);
+		testList.add(47);
+		testList.add(53);
+		testList.add(59);
+		testList.add(61);
+		testList.add(67);
+		testList.add(71);
+		testList.add(73);
+		testList.add(79);
+		testList.add(83);
+		testList.add(89);
+		testList.add(97);
+		assertEquals(testList, Primes.Generation(100));
+	}
 }
