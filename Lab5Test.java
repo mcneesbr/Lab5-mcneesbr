@@ -15,4 +15,8 @@ public class Lab5Test {
 		assertTrue(Primes.Factorization(2).get(0) == 2);
 	}
 	
+	@Test
+	public void test3() {
+		assertTrue(Primes.Factorization(3).get(0) == 3);
+	}
 }
